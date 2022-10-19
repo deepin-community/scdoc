@@ -1,0 +1,10 @@
+image: alpine/edge
+sources:
+- https://git.sr.ht/~sircmpwn/scdoc
+tasks:
+- build: |
+    cd scdoc
+    make
+- check: |
+    cd scdoc
+    make check

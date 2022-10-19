@@ -1,0 +1,107 @@
+scdoc (1.11.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * Bump standards verstion to 4.5.1 (no changes required)
+  * Bump watchfile version to 4
+
+ -- Birger Schacht <birger@debian.org>  Sat, 06 Feb 2021 16:27:13 +0100
+
+scdoc (1.11.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * d/rules and d/patches: dropped the patch to unset
+    upstreams LDFLAGS and instead set the variable in
+    d/rules; also did some cleanup in d/rules
+  * d/upstream/metadata: add Bug-Submit field
+  * d/control
+   + change Maintainer field address to debian.org address
+   + bump debhelper-compat version to 13
+   + adjust VCS-* URLs to point to debian namespace
+  * Added a d/gbp.conf to specify default branch and pristine-tar
+
+ -- Birger Schacht <birger@debian.org>  Fri, 17 Jul 2020 16:07:49 +0200
+
+scdoc (1.10.1-1) unstable; urgency=medium
+
+  * New upstream release
+  * d/patches:
+   - Refreshed patch
+  * d/control:
+   - Bumped Standards-Version to 4.5.0 (no changes required to
+     make package compliant)
+
+ -- Birger Schacht <birger@rantanplan.org>  Sun, 16 Feb 2020 19:52:42 +0100
+
+scdoc (1.10.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * d/copyright:
+   - Replaced Upstream-Author with Upstream-Contact
+  * d/patches:
+   - Refreshed patch
+  * d/control:
+   - Bumped Standards-Version to 4.4.1 (no changes required to
+     make package compliant)
+
+ -- Birger Schacht <birger@rantanplan.org>  Mon, 21 Oct 2019 20:07:07 +0200
+
+scdoc (1.9.6-1) unstable; urgency=medium
+
+  * New upstream release
+  * Refreshed patch
+  * Bumped standards version to 4.4.0 (no changes required to make
+    package compliant)
+  * d/gitlab-ci.yml: Drop superfluous release variable
+
+ -- Birger Schacht <birger@rantanplan.org>  Mon, 29 Jul 2019 18:51:33 +0200
+
+scdoc (1.9.4-2) unstable; urgency=medium
+
+  * d/rules: Set PREFIX also for build, so that the
+    scdoc.pc file gets generated correctly (Closes: #927919)
+
+ -- Birger Schacht <birger@rantanplan.org>  Thu, 25 Apr 2019 09:06:36 +0200
+
+scdoc (1.9.4-1) unstable; urgency=medium
+
+  * New upstream release (Closes: 927734)
+  * Refreshed patch
+  * Fix d/watch
+  * d/rules: Set PCDIR to /usr/share/pkgconfig
+  * d/control: Readd multiarch hints
+
+ -- Birger Schacht <birger@rantanplan.org>  Sat, 02 Mar 2019 22:16:25 +0100
+
+scdoc (1.9.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Refreshed patch
+  * d/rules: Pass PCDIR to the install target
+  * d/control: Drop Multiarch hint
+
+ -- Birger Schacht <birger@rantanplan.org>  Wed, 27 Feb 2019 20:21:39 +0100
+
+scdoc (1.8.1-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Birger Schacht <birger@rantanplan.org>  Sun, 03 Feb 2019 16:16:12 +0100
+
+scdoc (1.8.0-1) unstable; urgency=medium
+
+  * New upstream release
+  * Refreshed patch
+
+ -- Birger Schacht <birger@rantanplan.org>  Sun, 03 Feb 2019 15:46:04 +0100
+
+scdoc (1.6.0-1) unstable; urgency=medium
+
+  * New release
+
+ -- Birger Schacht <birger@rantanplan.org>  Fri, 18 Jan 2019 21:28:01 +0100
+
+scdoc (1.5.2-1) unstable; urgency=low
+
+  * Initial release. (Closes: #912754)
+
+ -- Birger Schacht <birger@rantanplan.org>  Sat, 03 Nov 2018 10:20:30 +0100

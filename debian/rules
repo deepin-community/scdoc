@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+DPKG_EXPORT_BUILDFLAGS = 1
+include /usr/share/dpkg/buildflags.mk
+CFLAGS+=$(CPPFLAGS)
+
+export PREFIX=/usr
+export PCDIR=debian/scdoc/usr/share/pkgconfig
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	dh_auto_build -- LDFLAGS="$(LDFLAGS)"
